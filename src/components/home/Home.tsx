@@ -1,13 +1,14 @@
 import './home.css';
 
-import HomeSlide from './components/homeSlide/HomeSlide';
-import HomeWelcome from './components/homeWelcome/HomeWelcome';
+import { HomeSlide, HomeWelcome, HomeBigIdeas, HomeFeatured } from './components';
 
 const Home: React.FC = () => {
     return (
         <main id="home">
             <HomeSlide />
             <HomeWelcome />
+            <HomeBigIdeas />
+            <HomeFeatured />
         </main>
     )
 }
