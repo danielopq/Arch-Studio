@@ -1,0 +1,28 @@
+#bottomNavBar{
+    width: 1110px;
+    height: 200px;
+    display: inline-flex;
+}
+
+#bottomNavBar-logo{
+    width: 200px;
+    height: inherit;
+    background: var(--veryDarkBlue) url('./img/logo-white.svg') center/96px no-repeat ;
+}
+
+#bottomNavBar-buttons{
+    width: 784px;
+    height: inherit;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--veryLightGrey);
+}
+
+#bottomNavBar-buttons > div{
+    width: 825px;
+    margin-right: -126px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
