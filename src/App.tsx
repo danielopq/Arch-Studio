@@ -1,9 +1,10 @@
 import './App.css'
+import TopNavBar from './components/topNavBar/TopNavBar'
 
 function App() {
   return (
     <>
-    Arch Studio
+      <TopNavBar />
     </>
   )
 }
