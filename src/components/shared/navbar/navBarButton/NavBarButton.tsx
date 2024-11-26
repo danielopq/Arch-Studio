@@ -2,12 +2,12 @@ import './navBarButton.css';
 
 interface NavBarButtonProps {
     text: string;
-    active?: boolean;
+    disabled?: boolean;
 }
 
-const NavBarButton: React.FC<NavBarButtonProps> = ({ text, active = false }) => {
+const NavBarButton: React.FC<NavBarButtonProps> = ({ text, disabled = false }) => {
     return (
-        <button className='navBarButton'>
+        <button className='navBarButton' disabled={disabled}>
             <p>{text}</p>
             <div></div>
         </button>
