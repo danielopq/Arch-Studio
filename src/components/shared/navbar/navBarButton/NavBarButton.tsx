@@ -7,7 +7,7 @@ interface NavBarButtonProps {
 
 const NavBarButton: React.FC<NavBarButtonProps> = ({ text, disabled = false }) => {
     return (
-        <button className='navBarButton' disabled={disabled}>
+        <button className='navBarButton' disabled={disabled} aria-label={text}>
             <p>{text}</p>
             <div></div>
         </button>
