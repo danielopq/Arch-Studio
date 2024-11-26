@@ -1,8 +1,8 @@
 #topNavBar{
     width: 1110px;
     height: 40px;
-    padding-right: 191px;
+    padding-left: 191px;
     display: inline-flex;
+    align-items: flex-end;
     background: url('./img/logo.svg') left/96px no-repeat;
-    border: solid 1px red;
 }

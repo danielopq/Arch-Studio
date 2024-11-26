@@ -1,0 +1,26 @@
+.navBarButton {
+    width: auto;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font: 700 18px/25px 'LeagueSpartan-Bold';
+    color: var(--veryDarkBlue);
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+@media(hover:hover) {
+    .navBarButton:hover {
+        color:var(--mediumGrey);
+    }
+}
+
+.navBarButton div {
+    width: 24px;
+    height: 1px;
+    background-color: var(--veryDarkBlue);
+}
