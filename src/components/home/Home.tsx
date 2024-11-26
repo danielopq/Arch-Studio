@@ -1,8 +1,11 @@
 import './home.css';
 
-const Home:React.FC = () =>{
-    return(
+import HomeSlide from './components/homeSlide/HomeSlide';
+
+const Home: React.FC = () => {
+    return (
         <main id="home">
+            <HomeSlide />
         </main>
     )
 }
