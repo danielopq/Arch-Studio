@@ -1,0 +1,39 @@
+:root{
+    --veryDarkBlue:#1B1D23; /*RGB : rgb(27, 29, 35) - hsl(225, 13%, 12%)*/
+    --darkGrey:#60636D; /*rgb(96, 99, 109) - hsl(226, 6%, 40%)*/
+    --mediumGrey:#7D828F; /*rgb(125, 130, 143) - hsl(223, 7%, 53%)*/
+    --lightGrey:#C8CCD8; /*rgb(200, 204, 216) - hsl(225, 17%, 82%)*/
+    --veryLightGrey:#EEEFF4; /*rgb(238, 239, 244) - hsl(230, 21%, 95%)*/
+    --red:#DF5656; /*rgb(223, 86, 86) - hsl(0, 68%, 61%)*/
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('./assets/fonts/LeagueSpartan-Bold.woff')format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Regular';
+    src: url('./assets/fonts/LeagueSpartan-Regular.woff')format('woff');
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
