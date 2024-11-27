@@ -5,6 +5,7 @@ import BottomNavBar from './components/bottomNavBar/BottomNavBar';
 import Home from './components/home/Home';
 import Portfolio from './components/portfolio/Portfolio';
 import AboutUs from './components/aboutUs/AboutUs';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <TopNavBar />
       {/* <Home /> */}
       {/* <Portfolio /> */}
-      <AboutUs />
+      {/* <AboutUs /> */}
+      <Contact />
       <BottomNavBar />
     </>
   )
