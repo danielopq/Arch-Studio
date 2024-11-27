@@ -14,8 +14,8 @@ function App() {
       <TopNavBar />
       {/* <Home /> */}
       {/* <Portfolio /> */}
-      {/* <AboutUs /> */}
-      <Contact />
+      <AboutUs />
+      {/* <Contact /> */}
       <BottomNavBar />
     </>
   )
