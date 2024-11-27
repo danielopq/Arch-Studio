@@ -14,9 +14,9 @@
 }
 
 @font-face {
-    font-family: 'LeagueSpartan-Regular';
-    src: url('./assets/fonts/LeagueSpartan-Regular.woff')format('woff');
-    font-weight: 400;
+    font-family: 'LeagueSpartan-Medium';
+    src: url('./assets/fonts/LeagueSpartan-Medium.woff')format('woff');
+    font-weight: 500;
 }
 
 *{
@@ -43,4 +43,34 @@ nav{
 p{
     margin: 0px;
     padding: 0px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font: 700 250px/200px 'LeagueSpartan-Bold';
+    letter-spacing: -5px;
+    color:var(--veryLightGrey);
+}
+
+h2{
+    font: 700 96px/80px 'LeagueSpartan-Bold';
+    letter-spacing: -2px;
+    color:white;
+}
+
+h3{
+    font: 700 72px/64px 'LeagueSpartan-Bold';
+    letter-spacing: -2px;
+}
+
+h4{
+    font: 700 32px/40px 'LeagueSpartan-Bold';
+}
+
+.text{
+    font: 500 18px/24px 'LeagueSpartan-Medium';
 }
