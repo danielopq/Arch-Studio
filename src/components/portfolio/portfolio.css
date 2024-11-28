@@ -8,3 +8,9 @@
     justify-content: flex-start;
     border: solid 1px blue;
 }
+
+#portfolioMosaic{
+    width: inherit;
+    height: 2336px;
+    border: solid 1px red;
+}
