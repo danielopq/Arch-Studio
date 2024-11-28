@@ -1,6 +1,37 @@
-#homeWelcome{
+#homeWelcome {
     width: inherit;
     height: 568px;
-    border: solid 1px red;
     margin-top: 195px;
+    padding-left: 189px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url('./img/welcomePic.jpg') right/350px no-repeat;
+}
+
+#homeWelcome h1 {
+    height: 200px;
+    margin: -123px 0px 0px -189px;
+}
+
+#homeWelcome h3 {
+    width: 446px;
+    color: var(--veryDarkBlue);
+}
+
+#homeWelcome div {
+    width: 445px;
+    height: 312px;
+    ;
+    display: flex;
+    margin-top: 43px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#homeWelcome p {
+    width: inherit;
+    color: var(--darkGrey);
 }

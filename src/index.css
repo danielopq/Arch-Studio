@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
 }
 
 h1{
-    font: 700 250px/200px 'LeagueSpartan-Bold';
+    font: 700 250px/270px 'LeagueSpartan-Bold';
     letter-spacing: -5px;
     color:var(--veryLightGrey);
 }
@@ -71,6 +71,6 @@ h4{
     font: 700 32px/40px 'LeagueSpartan-Bold';
 }
 
-.text{
+.defaultText{
     font: 500 18px/24px 'LeagueSpartan-Medium';
 }
