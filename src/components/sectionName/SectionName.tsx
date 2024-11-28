@@ -1,7 +1,7 @@
 import './sectionName.css';
 
 interface SectionNameProps{
-    title:string;
+    title:'home' | 'portfolio' | 'about us' | 'contact';
 } 
 
 /**

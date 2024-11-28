@@ -7,21 +7,26 @@ import Portfolio from './components/portfolio/Portfolio';
 import AboutUs from './components/aboutUs/AboutUs';
 import Contact from './components/contact/Contact';
 import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+
+
+type SectnName = 'home' | 'portfolio' | 'about us' | 'contact';
 
 function App() {
+  const [currentSection,SetCurrentSection] = useState<SectnName>('home');
   return (
     <>
-      <SectionName title={'home'} />
+      <SectionName title={currentSection} />
       <TopNavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio setCurrentSection={SetCurrentSection}/>} />
+        <Route path="/aboutus" element={<AboutUs setCurrentSection={SetCurrentSection}/>} />
+        <Route path="/contact" element={<Contact setCurrentSection={SetCurrentSection}/>} />
       </Routes>
       <BottomNavBar />
     </>
   )
 }
 
-export default App
+export default App;

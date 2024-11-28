@@ -1,7 +1,17 @@
 import './contact.css';
 import { ContactHeader, ContactDetails, ContactMap, ContactForm } from './components';
+import { useEffect } from 'react';
 
-const Contact: React.FC = () => {
+interface ContactProps {
+    setCurrentSection: (section: 'home' | 'portfolio' | 'about us' | 'contact') => void;
+};
+
+const Contact: React.FC<ContactProps> = ({setCurrentSection}) => {
+
+    useEffect(() => {
+        setCurrentSection('contact');
+    }, [])
+
     return (
         <main id="contact">
             <ContactHeader />
