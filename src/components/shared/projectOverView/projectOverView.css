@@ -1,0 +1,38 @@
+.projectOverView{
+    width: 350px;
+    height: 560px;
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projectOverView > div{
+    width: inherit;
+    height: inherit;
+    padding: 45px 0px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.projectOverViewNumber{
+    margin-right: -10px;
+    padding: 0px;
+    font: 700 250px/200px 'LeagueSpartan-Bold';
+    letter-spacing: -5px;
+    text-align: right;
+    color:rgba(255,255,255,0.5);
+}
+
+.projectOverViewInfo{
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+}
+
+.projectOverViewTitle{
+    font: 700 32px/40px 'LeagueSpartan-Bold';
+}
