@@ -19,7 +19,7 @@ function App() {
       <SectionName title={currentSection} />
       <TopNavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setCurrentSection={SetCurrentSection}/>} />
         <Route path="/portfolio" element={<Portfolio setCurrentSection={SetCurrentSection}/>} />
         <Route path="/aboutus" element={<AboutUs setCurrentSection={SetCurrentSection}/>} />
         <Route path="/contact" element={<Contact setCurrentSection={SetCurrentSection}/>} />
