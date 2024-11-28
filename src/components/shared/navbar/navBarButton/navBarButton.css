@@ -16,10 +16,6 @@
     cursor: pointer;
 }
 
-.navBarButton:not(:disabled).navBarButton div{
-    background-color: transparent;
-}
-
 @media(hover:hover) {
     .navBarButton:hover {
         color: var(--veryDarkBlue);
@@ -30,11 +26,17 @@
     color: var(--veryDarkBlue);
 }
 
-.navBarButton:disabled.navBarButton div{
+.btUnderline {
+    width: 24px;
+    height: 1px;
+    transition: background-color 0.5s ease;
+}
+
+.navBarButton:disabled .btUnderline{
     background-color: var(--veryDarkBlue);
 }
 
-.navBarButton div {
-    width: 24px;
-    height: 1px; 
+.navBarButton:not(:disabled) .btUnderline{
+    background-color: transparent;
 }
+

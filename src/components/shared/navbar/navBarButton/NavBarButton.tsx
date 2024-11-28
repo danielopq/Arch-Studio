@@ -19,7 +19,7 @@ const NavBarButton: React.FC<NavBarButtonProps> = ({ text, path,currentSection='
     return (
         <button className='navBarButton' disabled={disabled} aria-label={text} onClick={() => navigate(path)}>
             <p>{text}</p>
-            <div></div>
+            <div className='btUnderline'></div>
         </button>
 
     )
