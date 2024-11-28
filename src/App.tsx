@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <SectionName title={currentSection} />
-      <TopNavBar />
+      <TopNavBar currentSection={currentSection}/>
       <Routes>
         <Route path="/" element={<Home setCurrentSection={SetCurrentSection}/>} />
         <Route path="/portfolio" element={<Portfolio setCurrentSection={SetCurrentSection}/>} />
