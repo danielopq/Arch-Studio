@@ -13,6 +13,7 @@ const HomeFeatured: React.FC = () => {
                 <ProjectOverView
                     number={'1'}
                     title='Project Del Sol'
+                    info='View All Projects'
                     desktopImg='url(./public/img/projects/projectDelSol-desktop.jpg)'
                     tabletImg='url(./public/img/projects/projectDelSol-tablet.jpg)'
                     mobileImg='url(./public/img/projects/projectDelSol-mobile.jpg)'
@@ -20,6 +21,7 @@ const HomeFeatured: React.FC = () => {
                 <ProjectOverView
                     number={'2'}
                     title='228B Tower'
+                    info='View All Projects'
                     desktopImg='url(./public/img/projects/tower-desktop.jpg)'
                     tabletImg='url(./public/img/projects/tower-tablet.jpg)'
                     mobileImg='url(./public/img/projects/tower-mobile.jpg)'
@@ -27,6 +29,7 @@ const HomeFeatured: React.FC = () => {
                 <ProjectOverView
                     number={'3'}
                     title='Le Protype'
+                    info='View All Projects'
                     desktopImg='url(./public/img/projects/prototype-desktop.jpg)'
                     tabletImg='url(./public/img/projects/prototype-tablet.jpg)'
                     mobileImg='url(./public/img/projects/prototype-mobile.jpg)'
