@@ -7,9 +7,10 @@ interface projectOverViewProps {
     desktopImg: string;
     tabletImg: string;
     mobileImg: string;
+    gridArea?:string;
 }
 
-const ProjectOverView: React.FC<projectOverViewProps> = ({ number='', title, desktopImg,tabletImg,mobileImg }) => {
+const ProjectOverView: React.FC<projectOverViewProps> = ({ number='', title, desktopImg,tabletImg,mobileImg,gridArea=''}) => {
 
     const [backgroundImage,setBackgroundImage] = useState<string>('');
 
@@ -21,7 +22,7 @@ const ProjectOverView: React.FC<projectOverViewProps> = ({ number='', title, des
     const isTablet:boolean = window.innerWidth >= 768 && window.innerWidth < 1440;
     
     return (
-        <div className='projectOverView' style={{ backgroundImage: backgroundImage }}>
+        <div className='projectOverView' style={{ backgroundImage: backgroundImage, gridArea: gridArea }}>
             <div>
                 <div className='projectOverViewNumber'>{number}</div>
                 <div className='projectOverViewInfo'>
