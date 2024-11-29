@@ -1,0 +1,45 @@
+.sectionHeader{
+    width: inherit;
+    height: 720px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-size:635px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.sectionHeader h1{
+    height: 200px;
+    margin-top: -87px;
+    line-height: 200px;
+}
+
+.headerContent{
+    width: 628px;
+    height: 503px;
+    padding-left: 182px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.headerContent div{
+    width: 65px;
+    height: 1px;
+    margin-top: 47px;
+    align-self: flex-start;
+    background-color: var(--lightGrey);
+}
+.headerContent h3{
+    width: 445px;
+    margin: 58px 0px 49px 0px;
+    color: var(--veryDarkBlue);
+}
+.headerContent p{
+    width: 445px;
+    color: var(--darkGrey);
+}

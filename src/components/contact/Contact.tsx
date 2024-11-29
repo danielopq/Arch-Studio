@@ -1,12 +1,13 @@
 import './contact.css';
-import { ContactHeader, ContactDetails, ContactMap, ContactForm } from './components';
+import SectionHeader from '../shared/sectionHeader/SectionHeader';
+import { ContactDetails, ContactMap, ContactForm } from './components';
 import { useEffect } from 'react';
 
 interface ContactProps {
     setCurrentSection: (section: 'home' | 'portfolio' | 'about us' | 'contact') => void;
 };
 
-const Contact: React.FC<ContactProps> = ({setCurrentSection}) => {
+const Contact: React.FC<ContactProps> = ({ setCurrentSection }) => {
 
     useEffect(() => {
         setCurrentSection('contact');
@@ -14,7 +15,7 @@ const Contact: React.FC<ContactProps> = ({setCurrentSection}) => {
 
     return (
         <main id="contact">
-            <ContactHeader />
+            <SectionHeader />
             <ContactDetails />
             <ContactMap />
             <ContactForm />
