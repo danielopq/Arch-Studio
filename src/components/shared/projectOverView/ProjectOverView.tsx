@@ -23,7 +23,7 @@ const ProjectOverView: React.FC<projectOverViewProps> = ({ number = '', title, i
     const isTablet: boolean = window.innerWidth >= 768 && window.innerWidth < 1440;
 
     return (
-        <div className='projectOverView' style={{ backgroundImage: backgroundImage, gridArea: gridArea }}>
+        <div className='projectOverView' style={{ backgroundImage: `url(${backgroundImage})`, gridArea: gridArea }}>
             <div>
                 <div className='projectOverViewNumber'>{number}</div>
                 <div className='projectOverViewInfo'>

@@ -6,11 +6,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: solid 1px blue;
 }
 
 #portfolioMosaic{
     width: inherit;
     height: 2336px;
-    border: solid 1px red;
+    display: grid;
+    grid-template-rows: 560px 560px 560px 560px;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-areas:
+    "seraph eebox federal"
+    "sol prototype 228B"
+    "edelweiss netcry hypers"
+    "sxiv trinity paramour";
+    grid-gap: 30px;
 }

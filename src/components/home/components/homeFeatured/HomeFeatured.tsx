@@ -14,25 +14,25 @@ const HomeFeatured: React.FC = () => {
                     number={'1'}
                     title='Project Del Sol'
                     info='View All Projects'
-                    desktopImg='url(./public/img/projects/projectDelSol-desktop.jpg)'
-                    tabletImg='url(./public/img/projects/projectDelSol-tablet.jpg)'
-                    mobileImg='url(./public/img/projects/projectDelSol-mobile.jpg)'
+                    desktopImg='./public/img/projects/projectDelSol-desktop.jpg'
+                    tabletImg='./public/img/projects/projectDelSol-tablet.jpg'
+                    mobileImg='./public/img/projects/projectDelSol-mobile.jpg'
                 />
                 <ProjectOverView
                     number={'2'}
                     title='228B Tower'
                     info='View All Projects'
-                    desktopImg='url(./public/img/projects/tower-desktop.jpg)'
-                    tabletImg='url(./public/img/projects/tower-tablet.jpg)'
-                    mobileImg='url(./public/img/projects/tower-mobile.jpg)'
+                    desktopImg='./public/img/projects/tower-desktop.jpg'
+                    tabletImg='./public/img/projects/tower-tablet.jpg'
+                    mobileImg='./public/img/projects/tower-mobile.jpg'
                 />
                 <ProjectOverView
                     number={'3'}
                     title='Le Protype'
                     info='View All Projects'
-                    desktopImg='url(./public/img/projects/prototype-desktop.jpg)'
-                    tabletImg='url(./public/img/projects/prototype-tablet.jpg)'
-                    mobileImg='url(./public/img/projects/prototype-mobile.jpg)'
+                    desktopImg='./public/img/projects/prototype-desktop.jpg'
+                    tabletImg='./public/img/projects/prototype-tablet.jpg'
+                    mobileImg='./public/img/projects/prototype-mobile.jpg'
                 />
             </div>
         </section>

@@ -14,7 +14,15 @@
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    cursor:pointer;
 }
+
+@media(hover:hover){
+    .projectOverView > div:hover{
+        background: rgba(255,255,255,0.4);
+    }
+}
+
 
 .projectOverViewNumber{
     margin-right: -10px;
