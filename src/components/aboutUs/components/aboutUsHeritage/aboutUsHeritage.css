@@ -2,5 +2,27 @@
     width: inherit;
     height: 568px;
     margin-top: 200px;
-    border: solid 1px red;
+    background: url('./img/aboutUsHeritage.jpg') right/540px no-repeat;
+}
+
+#aboutUsHeritage div:not(.defaultText){
+    width: 65px;
+    height: 1px;
+    background-color: var(--lightGrey);
+}
+
+#aboutUsHeritage h3{
+    width: 380px;
+    height: 133px;
+    color:var(--veryDarkBlue);
+    margin: 82px 0px 54px;
+}
+
+#aboutUsHeritage div[class='defaultText']{
+    width: 445px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:var(--veryDarkBlue);
 }
