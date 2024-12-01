@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import './homeSlide.css';
 
 import SlideButton from './slideButton/SlideButton';
 import SlideProject from './slideProject/SlideProject';
 
 const HomeSlide: React.FC = () => {
+
+    const [currentProject, setCurrentProject] = useState<number>(0);
+    const [projectsOpacity, setProjectsOpacity] = useState<number[]>([1, 0, 0, 0]);
+
+    const displayProject = (projectNum:number):void=>{
+
+    }
 
     return (
         <section id="homeSlide">
@@ -44,10 +52,10 @@ const HomeSlide: React.FC = () => {
                 mobileImg='./img/home/trinity-desktop.jpg'
             />
             <nav id="homeSlideNavBar">
-                <SlideButton text='01' disabled={true} />
-                <SlideButton text='02' disabled={false} />
-                <SlideButton text='03' disabled={false} />
-                <SlideButton text='04' disabled={false} />
+                <SlideButton text='01' disabled={true} displayProject={() => displayProject(0)}/>
+                <SlideButton text='02' disabled={true} displayProject={() => displayProject(1)}/>
+                <SlideButton text='03' disabled={true} displayProject={() => displayProject(2)}/>
+                <SlideButton text='04' disabled={true} displayProject={() => displayProject(3)}/>
             </nav>
         </section>
     )
