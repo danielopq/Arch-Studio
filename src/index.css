@@ -68,6 +68,10 @@ h3{
 }
 
 h4{
+    font: 700 18px/35px 'LeagueSpartan-Bold';
+}
+
+h5{
     font: 700 32px/40px 'LeagueSpartan-Bold';
 }
 

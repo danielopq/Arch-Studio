@@ -2,5 +2,22 @@
     width: inherit;
     height: 207px;
     margin-top: 274px;
-    border: solid 1px red;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#contactDetails h3{
+    width: 350px;
+    height: 128px;
+    color:var(--veryDarkBlue);
+}
+
+.contactDetailsInfo{
+    width: 350px;
+    height: inherit;
+    margin: 14px 0px 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:var(--darkGrey);
 }

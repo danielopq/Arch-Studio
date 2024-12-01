@@ -1,0 +1,18 @@
+.viewOnMapBt{
+    width: 151px;
+    height: 25px;
+    padding: 0px;
+    font: 700 18px/25px 'LeagueSpartan-Bold';
+    text-align: left;
+    color: var(--veryDarkBlue);
+    background: url('./img/icon-arrow.svg') right/24px no-repeat;
+    transition: opacity 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    .viewOnMapBt:hover{
+        opacity: 0.4;
+    }
+}
