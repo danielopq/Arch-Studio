@@ -1,0 +1,40 @@
+.slideProject{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    background-position: center;
+    background-size: 1110px;
+    background-repeat: no-repeat;
+}
+
+.slideProjectBg{
+    width: inherit;
+    height: inherit;
+    padding: 186px 0px 0px 190px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.slideProjectBg > div{
+    width: 544px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideProject h2{
+    width: 540px;
+    height: 160px;
+}
+
+.slideProject p{
+    width: 445px;
+    height: 160px;
+    margin-top: 10px;
+    color: white;
+}
+
+.slideProject button{
+    width: 252px;
+    margin-top: 17px;
+}
