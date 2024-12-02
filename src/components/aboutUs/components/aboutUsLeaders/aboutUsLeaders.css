@@ -1,6 +1,26 @@
 #aboutUsLeaders{
     width: inherit;
     height: 861px;
+    display: inline-flex;
+    justify-content: space-between;
     margin-top: 200px;
-    border: solid 1px red;
+}
+
+#aboutUsLeaders h3{
+    width: 235px;
+    height: 128px;
+    color:var(--veryDarkBlue);
+}
+
+#leaderProfiles{
+    width: 730px;
+    height: 861px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 399px 399px;
+    column-gap: 30px;
+    row-gap: 63px;
+    grid-template-areas:
+    "Jake Thompson"
+    "Jackson Maria";
 }

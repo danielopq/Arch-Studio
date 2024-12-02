@@ -1,0 +1,22 @@
+
+.leader{
+    width: 350px;
+    height: 399px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.leader h5{
+    height: 40px;
+    color:var(--veryDarkBlue);
+}
+
+.leader p{
+    margin: 0px;
+    height: 24px;
+    color:var(--veryDarkBlue);
+}
