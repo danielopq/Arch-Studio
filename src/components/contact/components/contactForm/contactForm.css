@@ -2,5 +2,24 @@
     width: inherit;
     height: 359px;
     margin-top: 159px;
+    display: inline-flex;
+    justify-content: space-between;
     border: solid 1px red;
+}
+
+#contactForm h3{
+    width: 260px;
+    height: 128px;
+    color: var(--veryDarkBlue);
+}
+
+#contactForm-content{
+    width: 730px;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder{
+    color: var(--lightGrey);
 }

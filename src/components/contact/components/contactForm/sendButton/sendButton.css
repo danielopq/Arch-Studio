@@ -1,0 +1,15 @@
+.sendButton{
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    background: var(--veryDarkBlue) url('./img/icon-arrow.svg') center/24px no-repeat;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    .sendButton:hover{
+        background-color: var(--darkGrey);
+    }
+}
