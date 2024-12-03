@@ -2,24 +2,23 @@ import './contactForm.css';
 import SendButton from './sendButton/SendButton';
 const ContactForm: React.FC = () => {
     return (
-        <section id="contactForm">
+        <section id="connectWithUs">
             <h3>Connect with us</h3>
-            <div id="contactForm-content">
-                <form>
+            <div id="connectWithUs-content">
+                <form id="contactForm">
                     <div>
                         <input type='text' placeholder='Name'></input>
-                        <p className='errorMessage'>Can’t be empty</p>
+                        <p>Can’t be empty</p>
                     </div>
                     <div>
                         <input type='email' placeholder='Email'></input>
-                        <p className='errorMessage'>Can’t be empty</p>
+                        <p>Can’t be empty</p>
                     </div>
                     <div>
-                        <input type='text' placeholder='Message'></input>
-                        <p className='errorMessage'>Can’t be empty</p>
-                        <SendButton/>
+                        <textarea placeholder='Message'></textarea>
+                        <p>Can’t be empty</p>
                     </div>
-
+                    <SendButton/>
                 </form>
             </div>
         </section>

@@ -1,19 +1,18 @@
-#contactForm{
+#connectWithUs{
     width: inherit;
     height: 359px;
     margin-top: 159px;
     display: inline-flex;
     justify-content: space-between;
-    border: solid 1px red;
 }
 
-#contactForm h3{
+#connectWithUs h3{
     width: 260px;
     height: 128px;
     color: var(--veryDarkBlue);
 }
 
-#contactForm-content{
+#connectWithUs-content{
     width: 730px;
     height: 353px;
     display: flex;
@@ -21,5 +20,57 @@
 }
 
 ::placeholder{
+    font: 700 20px/1 'LeagueSpartan-Bold';
+    letter-spacing: -0.31px;
     color: var(--lightGrey);
 }
+
+#contactForm > div{
+    width: 730px;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--veryDarkBlue);
+}
+
+#contactForm input,textarea{
+    width: 550px;
+    padding-left: 35px;
+    font: 700 20px/1 'LeagueSpartan-Bold';
+    letter-spacing: -0.31px;
+    color: var(--veryDarkBlue);
+    border: none;
+}
+
+#contactForm input:focus,textarea:focus{
+    border: none;
+    outline: none;
+}
+
+#contactForm input{
+    height: 44px;
+    padding-bottom: 25px;
+}
+
+#contactForm > div:nth-child(1),
+#contactForm > div:nth-child(2) {
+    margin-bottom: 43px;
+}
+
+#contactForm p{
+    margin-top: 11px;
+    font: 700 18px/1 'LeagueSpartan-Bold';
+    letter-spacing: -0.28px;
+    color: var(--red);
+}
+
+#contactForm textarea{
+    height: 92px;
+    padding-top: 0px;
+    resize: none;
+}
+
+#contactForm button{
+    float: right;
+}
+
