@@ -1,5 +1,4 @@
 import './slideProject.css';
-import ArrowButton from '../../../../shared/arrowButton/ArrowButton';
 import { useEffect, useState } from 'react';
 
 interface SlideProjectProps{
@@ -27,7 +26,6 @@ const SlideProject: React.FC<SlideProjectProps> = ({zIndex,opacity,title,mainTex
                 <div>
                     <h2>{title}</h2>
                     <p className='defaultText'>{mainText}</p>
-                    <ArrowButton text='See Our Portfolio' />
                 </div>
             </div>
         </div>
