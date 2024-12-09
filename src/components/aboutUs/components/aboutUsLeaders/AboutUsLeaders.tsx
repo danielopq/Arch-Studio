@@ -1,5 +1,14 @@
 import './aboutUsLeaders.css';
 import Leader from './leader/Leader';
+
+/**
+ * Renders the "Leaders" section within the "About Us" page.
+ * 
+ * This component showcases profiles of the company's key leaders, including their
+ * names, positions, and associated images. Each leader is represented by a `Leader` component.
+ * 
+ * @returns {JSX.Element} The AboutUsLeaders component.
+ */
 const AboutUsLeaders:React.FC = () =>{
     return(
         <section id="aboutUsLeaders">
