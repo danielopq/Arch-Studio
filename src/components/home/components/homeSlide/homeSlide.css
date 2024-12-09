@@ -12,3 +12,8 @@
     margin: 640px 0px 0px -80px;
     display: inline-flex;
 }
+
+#homeSlide > button{
+    margin: 469px 0px 0px 190px;
+    z-index: 100;
+}

@@ -3,6 +3,7 @@ import './homeSlide.css';
 
 import SlideButton from './slideButton/SlideButton';
 import SlideProject from './slideProject/SlideProject';
+import ArrowButton from '../../../shared/arrowButton/ArrowButton';
 
 const HomeSlide: React.FC = () => {
 
@@ -26,6 +27,7 @@ const HomeSlide: React.FC = () => {
 
     return (
         <section id="homeSlide">
+            <ArrowButton text='See Our Portfolio'/>
             <SlideProject
                 zIndex='1'
                 opacity={projectsOpacity[0]}
@@ -62,6 +64,7 @@ const HomeSlide: React.FC = () => {
                 tabletImg='./img/home/trinity-desktop.jpg'
                 mobileImg='./img/home/trinity-desktop.jpg'
             />
+            
             <nav id="homeSlideNavBar">
                 <SlideButton text='01' disabled={currentProject === 0} displayProject={() => displayProject(0)}/>
                 <SlideButton text='02' disabled={currentProject === 1} displayProject={() => displayProject(1)}/>
