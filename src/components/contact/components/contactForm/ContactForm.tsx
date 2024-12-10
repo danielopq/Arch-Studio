@@ -15,13 +15,19 @@ const ContactForm: React.FC = () => {
         return (text.trim() === '');
     }
 
+    function isValidEmail(email: string): boolean {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
     const submitForm = (event: React.FormEvent): void => {
         event.preventDefault();
         if (refName.current && refNameError.current) {
             isEmpty(refName.current.value) ? refNameError.current.innerText = 'Can’t be empty' : refNameError.current.innerText = '';
         }
         if (refEmail.current && refEmailError.current) {
-            isEmpty(refEmail.current.value) ? refEmailError.current.innerText = 'Can’t be empty' : refEmailError.current.innerText = '';
+            isEmpty(refEmail.current.value) ? refEmailError.current.innerText = 'Can’t be empty' 
+            : isValidEmail(refEmail.current.value) ? refEmailError.current.innerText = '' : refEmailError.current.innerText = 'Invalid format';
         }
         if (refMessage.current && refMessageError.current) {
             isEmpty(refMessage.current.value) ? refMessageError.current.innerText = 'Can’t be empty' : refMessageError.current.innerText = '';
@@ -38,7 +44,7 @@ const ContactForm: React.FC = () => {
                         <p ref={refNameError}></p>
                     </div>
                     <div>
-                        <input ref={refEmail} type='email' placeholder='Email'></input>
+                        <input ref={refEmail} type='text' placeholder='Email'></input>
                         <p ref={refEmailError}></p>
                     </div>
                     <div>
