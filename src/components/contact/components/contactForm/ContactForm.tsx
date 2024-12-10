@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import './contactForm.css';
 import SendButton from './sendButton/SendButton';
+import ArrowButton from '../../../shared/arrowButton/ArrowButton';
 import {isEmpty,isValidEmail} from './utils/validateForm'
 
 interface Errors{
@@ -19,6 +20,7 @@ const ContactForm: React.FC = () => {
 
     const {nameError,emailError,messageError} = errors;
 
+    const refConfirmation = useRef<HTMLDivElement>(null);
     const refName = useRef<HTMLInputElement>(null);
     const refEmail = useRef<HTMLInputElement>(null);
     const refMessage = useRef<HTMLTextAreaElement>(null);
@@ -43,12 +45,21 @@ const ContactForm: React.FC = () => {
             isEmpty(refMessage.current.value) ? newError.messageError = 'Can’t be empty' : newError.messageError = '';
         }
 
-        setErrors(newError);
-        (nameError + emailError + messageError) === '' && console.log('no hay errores');
+        if (newError.nameError === '' && newError.emailError === '' && newError.messageError === '' && refConfirmation.current) {
+            refConfirmation.current.style.display = 'inline-flex';
+        }
+
+        setErrors(newError);  
     }
 
     return (
         <section id="connectWithUs">
+            <div id="confirmation" ref={refConfirmation}>
+                <div>
+                    <p>Your message has been sent. We will contact you soon.</p>
+                    <ArrowButton text='Accept'/>
+                </div>
+            </div>
             <h3>Connect with us</h3>
             <div id="connectWithUs-content">
                 <form id="contactForm" onSubmit={submitForm}>
