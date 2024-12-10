@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import './contactForm.css';
 import SendButton from './sendButton/SendButton';
+import {isEmpty,isValidEmail} from './utils/validateForm'
 
 interface Errors{
     nameError:string;
@@ -21,15 +22,6 @@ const ContactForm: React.FC = () => {
     const refName = useRef<HTMLInputElement>(null);
     const refEmail = useRef<HTMLInputElement>(null);
     const refMessage = useRef<HTMLTextAreaElement>(null);
-
-    const isEmpty = (text:string):boolean => {
-        return (text.trim() === '');
-    }
-
-    function isValidEmail(email: string): boolean {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
 
     const submitForm = (event: React.FormEvent): void => {
         event.preventDefault();
@@ -60,15 +52,15 @@ const ContactForm: React.FC = () => {
             <h3>Connect with us</h3>
             <div id="connectWithUs-content">
                 <form id="contactForm" onSubmit={submitForm}>
-                    <div>
+                    <div className={nameError === '' ? '' : 'error'}>
                         <input ref={refName} type='text' placeholder='Name'></input>
                         <p>{nameError}</p>
                     </div>
-                    <div>
+                    <div className={emailError === '' ? '' : 'error'}>
                         <input ref={refEmail} type='text' placeholder='Email'></input>
                         <p>{emailError}</p>
                     </div>
-                    <div>
+                    <div className={messageError === '' ? '' : 'error'}>
                         <textarea ref={refMessage} placeholder='Message'></textarea>
                         <p>{messageError}</p>
                     </div>
