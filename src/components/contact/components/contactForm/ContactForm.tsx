@@ -21,9 +21,14 @@ const ContactForm: React.FC = () => {
     const {nameError,emailError,messageError} = errors;
 
     const refConfirmation = useRef<HTMLDivElement>(null);
+    const refForm = useRef<HTMLFormElement>(null);
     const refName = useRef<HTMLInputElement>(null);
     const refEmail = useRef<HTMLInputElement>(null);
     const refMessage = useRef<HTMLTextAreaElement>(null);
+
+    const closeConfirmation = () => {
+        if (refConfirmation.current) refConfirmation.current.style.display = 'none';
+    }
 
     const submitForm = (event: React.FormEvent): void => {
         event.preventDefault();
@@ -34,19 +39,15 @@ const ContactForm: React.FC = () => {
             messageError:'',
         }
 
-        if (refName.current) {
+        if( refForm.current && refName.current && refEmail.current && refMessage.current && refConfirmation.current){
             isEmpty(refName.current.value) ? newError.nameError = 'Can’t be empty' : newError.nameError = '';
-        }
-        if (refEmail.current) {
-            isEmpty(refEmail.current.value) ? newError.emailError = 'Can’t be empty' 
-            : isValidEmail(refEmail.current.value) ? newError.emailError = '' : newError.emailError = 'Invalid format';
-        }
-        if (refMessage.current) {
+            isEmpty(refEmail.current.value) ? newError.emailError = 'Can’t be empty' : isValidEmail(refEmail.current.value) ? newError.emailError = '' : newError.emailError = 'Invalid format';
             isEmpty(refMessage.current.value) ? newError.messageError = 'Can’t be empty' : newError.messageError = '';
-        }
 
-        if (newError.nameError === '' && newError.emailError === '' && newError.messageError === '' && refConfirmation.current) {
-            refConfirmation.current.style.display = 'inline-flex';
+            if (newError.nameError === '' && newError.emailError === '' && newError.messageError === '') {
+                refConfirmation.current.style.display = 'inline-flex';
+                refForm.current.reset();
+            }
         }
 
         setErrors(newError);  
@@ -57,12 +58,12 @@ const ContactForm: React.FC = () => {
             <div id="confirmation" ref={refConfirmation}>
                 <div>
                     <p>Your message has been sent. We will contact you soon.</p>
-                    <ArrowButton text='Accept'/>
+                    <ArrowButton text='Accept' handleClick={closeConfirmation}/>
                 </div>
             </div>
             <h3>Connect with us</h3>
             <div id="connectWithUs-content">
-                <form id="contactForm" onSubmit={submitForm}>
+                <form id="contactForm" ref={refForm} onSubmit={submitForm}>
                     <div className={nameError === '' ? '' : 'error'}>
                         <input ref={refName} type='text' placeholder='Name'></input>
                         <p>{nameError}</p>
