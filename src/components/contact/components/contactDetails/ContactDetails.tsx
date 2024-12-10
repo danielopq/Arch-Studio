@@ -1,6 +1,12 @@
 import './contactDetails.css';
-import ViewOnMapBt from './viewOnMapBt/viewOnMapBt';
+import ViewOnMapBt from './viewOnMapBt/ViewOnMapBt';
 
+/**
+ * ContactDetails component displays the company's office information, including email, address, and phone number.
+ * It also includes buttons to view the locations of the offices on a map.
+ * 
+ * @returns {JSX.Element} The ContactDetails component displaying the office details and view on map buttons.
+ */
 const ContactDetails: React.FC = () => {
     return (
         <section id="contactDetails">
