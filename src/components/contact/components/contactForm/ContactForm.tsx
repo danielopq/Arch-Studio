@@ -10,6 +10,13 @@ interface Errors{
     messageError:string;
 }
 
+
+/**
+ * ContactForm component that contains a contact application form where users can submit their information.
+ * The form includes validation and displays a confirmation message upon successful submission.
+ * 
+ * @returns {JSX.Element} The ContactForm component with form fields, error handling, and confirmation message.
+ */
 const ContactForm: React.FC = () => {
 
     const [errors,setErrors] = useState<Errors>({
@@ -26,10 +33,20 @@ const ContactForm: React.FC = () => {
     const refEmail = useRef<HTMLInputElement>(null);
     const refMessage = useRef<HTMLTextAreaElement>(null);
 
+
+    /**
+     * Closes the confirmation message when the user clicks the accept button.
+     */
     const closeConfirmation = () => {
         if (refConfirmation.current) refConfirmation.current.style.display = 'none';
     }
 
+ 
+    /**
+     * Validates the form fields, displays a confirmation message on success, and resets the form.
+     * 
+     * @param {React.FormEvent} event - The event triggered by the form submission.
+     */
     const submitForm = (event: React.FormEvent): void => {
         event.preventDefault();
 
