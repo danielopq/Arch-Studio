@@ -6,6 +6,13 @@ interface PortfolioProps {
     setCurrentSection: (section: 'home' | 'portfolio' | 'about us' | 'contact') => void;
 };
 
+/**
+ * Represents the portfolio page of the website.
+ * 
+ * @param {HomeProps} param0 - The props for the Home component.
+ * @param {(section: 'home' | 'portfolio' | 'about us' | 'contact') => void} param0.setCurrentSection -  Function to update the current section in the website's navigation state.
+ * @returns {JSX.Element} The Portfolio component rendering the portfolio page.
+ */
 const Portfolio: React.FC<PortfolioProps> = ({ setCurrentSection }) => {
 
     useEffect(() => {
