@@ -7,3 +7,15 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #home{
+        width: 768px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
