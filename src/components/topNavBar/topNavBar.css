@@ -7,3 +7,15 @@
     align-items: flex-end;
     background: url('./img/logo.svg') left/96px no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #topNavBar{
+        width: 573px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
