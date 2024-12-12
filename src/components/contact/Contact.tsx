@@ -1,6 +1,6 @@
 import './contact.css';
 import SectionHeader from '../shared/sectionHeader/SectionHeader';
-import { ContactDetails, ContactMap, ContactForm } from './components';
+import { ContactDetails, ContactForm } from './components';
 import { useEffect } from 'react';
 
 interface ContactProps {
@@ -33,7 +33,6 @@ const Contact: React.FC<ContactProps> = ({ setCurrentSection }) => {
                 mobileImg='./public/img/contact/ContactHeadPic-mobile.jpg'
             />
             <ContactDetails />
-            <ContactMap />
             <ContactForm />
         </main>
     )

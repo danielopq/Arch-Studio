@@ -1,7 +1,14 @@
 #contactDetails{
     width: inherit;
-    height: 207px;
+    height: auto;
     margin-top: 274px;
+    display: flex;
+    flex-direction: column;
+}
+
+#officeDetails{
+    width: inherit;
+    height: 207px;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -20,4 +27,10 @@
     flex-direction: column;
     justify-content: flex-start;
     color:var(--darkGrey);
+}
+
+#contactMap{
+    width: inherit;
+    height: 560px;
+    margin-top: 199px;
 }
