@@ -26,3 +26,31 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #bottomNavBar{
+        width: 768px;
+        height: 120px;
+    }
+    
+    #bottomNavBar-logo{
+        width: 120px;
+        height: inherit;
+        background: var(--veryDarkBlue) url('./img/logo-white.svg') center/58px no-repeat ;
+    }
+    
+    #bottomNavBar-buttons{
+        width: 492px;
+    }
+    
+    #bottomNavBar-buttons > div{
+        width: 608px;
+        margin-right: -156px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
