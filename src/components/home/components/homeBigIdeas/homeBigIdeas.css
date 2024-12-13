@@ -22,3 +22,25 @@
     margin-bottom: 27px;
     color: white;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeBigIdeas{
+        margin-top: 233px;
+        background: url('img/bigIdeas-tablet.jpg') center/573px no-repeat;
+    }
+    
+    #homeBigIdeas > div{
+        padding: 167px 70px 0px;
+    }
+    
+    #homeBigIdeas h3{
+        height: 152px;
+        margin-bottom: 0px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
