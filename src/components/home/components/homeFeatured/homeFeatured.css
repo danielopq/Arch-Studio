@@ -1,4 +1,4 @@
-#homeFeatured{
+#homeFeatured {
     width: inherit;
     height: 696px;
     display: flex;
@@ -7,9 +7,27 @@
     margin-top: 200px;
 }
 
-#homeFeatured > div{
+#homeFeatured>div {
     width: inherit;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeFeatured {
+        height: 925px;
+    }
+
+    #homeFeatured>div {
+        height: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
