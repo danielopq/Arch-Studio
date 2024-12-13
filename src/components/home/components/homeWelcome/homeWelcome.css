@@ -23,15 +23,38 @@
 #homeWelcome div {
     width: 445px;
     height: 312px;
-    ;
-    display: flex;
     margin-top: 43px;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 }
 
 #homeWelcome p {
-    width: inherit;
     color: var(--darkGrey);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeWelcome {
+        height: 570px;
+        margin-top: 89px;
+        padding-left: 0px;
+        background: none;
+    }
+    
+    #homeWelcome h1 {
+        height: 200px;
+        margin: 0px 0px -41px;
+    }
+    
+    #homeWelcome div {
+        width: 572px;
+        height: 240px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}

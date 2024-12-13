@@ -81,7 +81,12 @@ h5{
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1{
+        font: 700 120px/200px 'LeagueSpartan-Bold';
+        letter-spacing: -3px;
+    }
+}
 
 /*############################## MOBILE VERSION ##############################*/
 
