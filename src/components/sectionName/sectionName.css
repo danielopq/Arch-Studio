@@ -1,27 +1,43 @@
-#sectionName{
+#sectionName {
     width: auto;
     height: 24px;
-    position:absolute;
+    position: absolute;
     z-index: 1;
     display: inline-flex;
     align-items: flex-start;
     justify-content: flex-start;
     transform: rotate(90deg);
-    transform-origin:left;
+    transform-origin: left;
     margin: -68px 0px 0px -90px;
 }
 
-#sectionName div{
+#sectionName div {
     width: 104px;
     height: 1px;
     margin: 9px 48px 0px 0px;
     background-color: var(--lightGrey);
 }
 
-#sectionName p{
+#sectionName p {
     width: auto;
     height: inherit;
     font: 500 18px/24px 'LeagueSpartan-Medium';
     letter-spacing: 18px;
-    color:var(--lightGrey);
+    color: var(--lightGrey);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #sectionName {
+        display: none;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #sectionName {
+        display: none;
+    }
 }

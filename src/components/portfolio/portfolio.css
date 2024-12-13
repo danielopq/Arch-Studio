@@ -21,3 +21,37 @@
     "sxiv trinity paramour";
     grid-gap: 30px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #portfolio{
+        width: 573px;
+        margin-bottom: 200px;
+    }
+    
+    #portfolioMosaic{
+        height: 3144px;
+        display: grid;
+        grid-template-rows: 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px ;
+        grid-template-columns: 573px;
+        grid-template-areas:
+        "seraph"
+        "eebox"
+        "federal"
+        "sol"
+        "prototype"
+        "228B"
+        "edelweiss"
+        "netcry"
+        "hypers"
+        "sxiv"
+        "trinity"
+        "paramour";
+        grid-gap: 24px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
