@@ -5,11 +5,25 @@ import SlideButton from './slideButton/SlideButton';
 import SlideProject from './slideProject/SlideProject';
 import ArrowButton from '../../../shared/arrowButton/ArrowButton';
 
+
+/**
+ * HomeSlide Component
+ * 
+ * This component renders a slideshow featuring various company projects.
+ * It includes automatic transitions between projects, with a navigation bar 
+ * to manually select specific projects (for the desktop version).
+ */
 const HomeSlide: React.FC = () => {
 
     const [currentProject, setCurrentProject] = useState<number>(0);
     const [projectsOpacity, setProjectsOpacity] = useState<string[]>(['1', '0', '0', '0']);
 
+
+    /**
+     * Updates the opacity of the projects to display the selected project.
+     * 
+     * @param projectNum - The index of the project to display.
+     */
     const displayProject = (projectNum:number):void=>{
         let newProjectsOpacity:string[] = ['0', '0', '0', '0'];
         newProjectsOpacity[projectNum] = '1';
@@ -17,6 +31,7 @@ const HomeSlide: React.FC = () => {
         setCurrentProject(projectNum);
     }
 
+    // Effect to handle the automatic slideshow transitions
     useEffect(() => {
         const runSlide = () => {
             (currentProject === projectsOpacity.length - 1) ? displayProject(0) : displayProject(currentProject + 1);
@@ -34,8 +49,8 @@ const HomeSlide: React.FC = () => {
                 title='Project Paramour'
                 mainText='Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.'
                 desktopImg='./img/home/paramour-desktop.jpg'
-                tabletImg='./img/home/paramour-desktop.jpg'
-                mobileImg='./img/home/paramour-desktop.jpg'
+                tabletImg='./img/home/paramour-tablet.jpg'
+                mobileImg='./img/home/paramour-mobile.jpg'
             />
             <SlideProject
                 zIndex='2'
@@ -43,8 +58,8 @@ const HomeSlide: React.FC = () => {
                 title='Seraph Station'
                 mainText='The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.'
                 desktopImg='./img/home/seraph-desktop.jpg'
-                tabletImg='./img/home/seraph-desktop.jpg'
-                mobileImg='./img/home/seraph-desktop.jpg'
+                tabletImg='./img/home/seraph-tablet.jpg'
+                mobileImg='./img/home/seraph-mobile.jpg'
             />
             <SlideProject
                 zIndex='3'
@@ -52,8 +67,8 @@ const HomeSlide: React.FC = () => {
                 title='Federal II Tower'
                 mainText='A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches. '
                 desktopImg='./img/home/federal-desktop.jpg'
-                tabletImg='./img/home/federal-desktop.jpg'
-                mobileImg='./img/home/federal-desktop.jpg'
+                tabletImg='./img/home/federal-tablet.jpg'
+                mobileImg='./img/home/federal-mobile.jpg'
             />
             <SlideProject
                 zIndex='4'
