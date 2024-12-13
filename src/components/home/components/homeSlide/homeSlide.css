@@ -17,3 +17,22 @@
     margin: 469px 0px 0px 190px;
     z-index: 100;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    #homeSlideNavBar{
+        display: none;
+    }
+    
+    #homeSlide > button{
+        margin: 469px 0px 0px 58px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+
+}
