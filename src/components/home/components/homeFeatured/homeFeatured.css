@@ -21,7 +21,7 @@
         height: 925px;
     }
 
-    #homeFeatured>div {
+    #homeFeatured>div:last-child {
         height: 768px;
         display: flex;
         flex-direction: column;
