@@ -1,4 +1,4 @@
-#aboutUsLeaders{
+#aboutUsLeaders {
     width: inherit;
     height: 861px;
     display: inline-flex;
@@ -6,13 +6,13 @@
     margin-top: 200px;
 }
 
-#aboutUsLeaders h3{
+#aboutUsLeaders h3 {
     width: 235px;
     height: 128px;
-    color:var(--veryDarkBlue);
+    color: var(--veryDarkBlue);
 }
 
-#leaderProfiles{
+#leaderProfiles {
     width: 730px;
     height: 861px;
     display: grid;
@@ -21,6 +21,34 @@
     column-gap: 30px;
     row-gap: 63px;
     grid-template-areas:
-    "Jake Thompson"
-    "Jackson Maria";
+        "Jake Thompson"
+        "Jackson Maria";
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutUsLeaders {
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutUsLeaders h3 {
+        width: 235px;
+        height: 128px;
+    }
+
+    #leaderProfiles {
+        width: 572px;
+        height: 773px;
+        grid-template-columns: 280px 280px;
+        grid-template-rows: 335px 335px;
+        column-gap: 11px;
+        row-gap: 103px;
+    } 
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
