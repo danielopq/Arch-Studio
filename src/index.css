@@ -86,6 +86,11 @@ h5{
         font: 700 120px/200px 'LeagueSpartan-Bold';
         letter-spacing: -3px;
     }
+
+    h3{
+        font: 700 48px/52px 'LeagueSpartan-Bold';
+        letter-spacing: -1.71px;
+    }
 }
 
 /*############################## MOBILE VERSION ##############################*/

@@ -1,6 +1,6 @@
 #aboutUsHeritage{
     width: inherit;
-    height: 568px;
+    height: 627px;
     margin-top: 200px;
     background: url('./img/aboutUsHeritage.jpg') right/540px no-repeat;
 }
@@ -26,3 +26,29 @@
     justify-content: space-between;
     color:var(--veryDarkBlue);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutUsHeritage{
+        width: inherit;
+        height: 627px;
+        margin-top: 200px;
+        background: none;
+    }
+    
+    #aboutUsHeritage h3{
+        width: 230px;
+        height: 104px;
+        margin: 69px 0px 22px;
+    }
+    
+    #aboutUsHeritage div[class='defaultText']{
+        width: 310px;
+        height: 432px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
