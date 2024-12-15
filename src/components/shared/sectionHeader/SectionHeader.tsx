@@ -24,7 +24,7 @@ interface SectionHeaderProps {
  * @param {string} props.mobileImg - Path to the mobile version of the header background image.
  * @returns {JSX.Element} The section header component.
  */
-const SectionHeader: React.FC<SectionHeaderProps> = ({section,header,text,desktopImg,tabletImg,mobileImg}) => {
+const SectionHeader: React.FC<SectionHeaderProps> = ({ section, header, text, desktopImg, tabletImg, mobileImg }) => {
     const [backgroundImage, setBackgroundImage] = useState<string>('');
     useEffect(() => {
         setBackgroundImage(isDesktop ? desktopImg : isTablet ? tabletImg : mobileImg);
@@ -36,7 +36,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({section,header,text,deskto
     return (
         <header className="sectionHeader" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='headerContent'>
-            <h1>{section}</h1>
+                <h1>{section}</h1>
                 <div></div>
                 <h3>{header}</h3>
                 <p className='defaultText'>{text}</p>

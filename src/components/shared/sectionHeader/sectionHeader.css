@@ -1,45 +1,85 @@
-.sectionHeader{
+.sectionHeader {
     width: inherit;
     height: 720px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    background-size:635px;
+    background-size: 635px;
     background-position: left;
     background-repeat: no-repeat;
 }
 
-.sectionHeader h1{
+.sectionHeader h1 {
     height: 200px;
     margin-top: -87px;
     line-height: 200px;
 }
 
-.headerContent{
+.headerContent {
     width: 628px;
     height: 503px;
     padding-left: 182px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
     background-color: white;
 }
 
-.headerContent div{
+.headerContent div {
     width: 65px;
     height: 1px;
     margin-top: 47px;
     align-self: flex-start;
     background-color: var(--lightGrey);
 }
-.headerContent h3{
+
+.headerContent h3 {
     width: 445px;
     margin: 58px 0px 49px 0px;
     color: var(--veryDarkBlue);
 }
-.headerContent p{
+
+.headerContent p {
     width: 445px;
     color: var(--darkGrey);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sectionHeader {
+        background-size: 573px;
+    }
+
+    .sectionHeader h1 {
+        height: 83px;
+        margin-top: -42px;
+        line-height: 100px;
+    }
+
+    .headerContent {
+        width: 572px;
+        height: 431px;
+        padding: 0px 60px 0px 59px;
+        margin-right: -57px;
+    }
+
+    .headerContent div {
+        margin-top: 54px;
+    }
+
+    .headerContent h3 {
+        width: 445px;
+        margin: 73px 0px 38px 0px;
+    }
+
+    .headerContent p {
+        width: 445px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
