@@ -89,4 +89,39 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #contactDetails{
+        width: 311px;
+        margin-top: 100px;
+    }
+
+    #officeDetails{
+        height: 562px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    #contactDetails h3{
+        width: 290px;
+        height: 104px;
+    }
+    
+    .contactDetailsInfo{
+        height: 189px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contactDetailsInfo > div{
+        width: inherit;
+        margin-bottom: 43px;
+    }
+
+    #contactMap{
+        width: 375;
+        height: 367px;
+        margin-top: 71px;
+    }
+}
