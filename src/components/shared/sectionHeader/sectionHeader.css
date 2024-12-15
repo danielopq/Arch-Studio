@@ -27,7 +27,7 @@
     background-color: white;
 }
 
-.headerContent div {
+.decoLine {
     margin-top: 47px;
     align-self: flex-start;
 }
@@ -63,7 +63,7 @@
         margin-right: -57px;
     }
 
-    .headerContent div {
+    .decoLine {
         margin-top: 54px;
     }
 
@@ -79,4 +79,39 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .sectionHeader {
+        width: inherit;
+        height: 529px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-size: 375px;
+        background-position: top;
+    }
+
+    .sectionHeader h1 {
+        display: none;
+    }
+
+    .headerContent {
+        width: 343px;
+        height: 310px;
+        padding-left: 32px;
+        margin-top: 195px;
+    }
+
+    .decoLine{
+        display: none;
+    }
+
+    .headerContent h3 {
+        width: 311px;
+        margin: 65px 0px 21px 0px;
+    }
+
+    .headerContent p {
+        width: 311px;
+    }
+}
