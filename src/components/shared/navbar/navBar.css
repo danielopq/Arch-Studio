@@ -5,3 +5,14 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .navBar{
+        width: 180px;
+        height: 139px;
+        display: flex;
+        flex-direction: column;
+    }
+}
