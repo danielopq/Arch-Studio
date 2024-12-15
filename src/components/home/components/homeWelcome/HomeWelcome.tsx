@@ -3,9 +3,10 @@ import './homeWelcome.css';
 const HomeWelcome: React.FC = () => {
     return (
         <section id="homeWelcome">
+            <div className='decoLine'></div>
             <h1>Welcome</h1>
             <h3>Welcome to Arch Studio</h3>
-            <div>
+            <div id="homeWelcomeText">
                 <p className='defaultText'>
                     We have a unique network and skillset to help bring your projects to life.
                     Our small team of highly skilled individuals combined with our large network

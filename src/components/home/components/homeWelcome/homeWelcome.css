@@ -10,6 +10,10 @@
     background: url('./img/welcomePic.jpg') right/350px no-repeat;
 }
 
+#homeWelcome div[class='decoLine'] {
+    display: none;
+}
+
 #homeWelcome h1 {
     height: 200px;
     margin: -123px 0px 0px -189px;
@@ -20,7 +24,7 @@
     color: var(--veryDarkBlue);
 }
 
-#homeWelcome div {
+#homeWelcomeText {
     width: 445px;
     height: 312px;
     margin-top: 43px;
@@ -43,13 +47,13 @@
         padding-left: 0px;
         background: none;
     }
-    
+
     #homeWelcome h1 {
         height: 200px;
         margin: 0px 0px -41px;
     }
-    
-    #homeWelcome div {
+
+    #homeWelcomeText {
         width: 572px;
         height: 240px;
     }
@@ -57,4 +61,31 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #homeWelcome {
+        width: 375px;
+        height: 625px;
+        margin-top: 72px;
+        padding: 0px 32px;
+        background: none;
+    }
+
+    #homeWelcome div[class='decoLine'] {
+        display: block;
+        margin-bottom: 68px;
+    }
+
+    #homeWelcome h1 {
+        display: none;
+    }
+
+    #homeWelcome h3 {
+        width: 311px;
+    }
+
+    #homeWelcomeText {
+        width: 310px;
+        height: 432px;
+        margin-top: 22px;
+    }
+}
