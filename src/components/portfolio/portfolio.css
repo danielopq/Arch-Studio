@@ -54,4 +54,30 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #portfolio{
+        width: 311px;
+        margin-bottom: 132px;
+    }
+    
+    #portfolioMosaic{
+        height: 3144px;
+        display: grid;
+        grid-template-rows: 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px ;
+        grid-template-columns: 311px;
+        grid-template-areas:
+        "seraph"
+        "eebox"
+        "federal"
+        "sol"
+        "prototype"
+        "228B"
+        "edelweiss"
+        "netcry"
+        "hypers"
+        "sxiv"
+        "trinity"
+        "paramour";
+        grid-gap: 24px;
+    }
+}
