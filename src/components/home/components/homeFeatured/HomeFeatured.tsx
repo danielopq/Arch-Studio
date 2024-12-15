@@ -5,11 +5,11 @@ import ArrowButton from '../../../shared/arrowButton/ArrowButton';
 const HomeFeatured: React.FC = () => {
     return (
         <section id="homeFeatured" >
-            <div>
+            <div id="homeFeatured-top" >
                 <h3>Featured</h3>
-                <ArrowButton text='See All'/>
+                <ArrowButton text='See All' />
             </div>
-            <div>
+            <div id="homeFeatured-projects">
                 <ProjectOverView
                     number={'1'}
                     title='Project Del Sol'
@@ -34,6 +34,9 @@ const HomeFeatured: React.FC = () => {
                     tabletImg='./public/img/projects/prototype-tablet.jpg'
                     mobileImg='./public/img/projects/prototype-mobile.jpg'
                 />
+            </div>
+            <div id="homeFeatured-bottom" >
+                <ArrowButton text='See All' />
             </div>
         </section>
     )

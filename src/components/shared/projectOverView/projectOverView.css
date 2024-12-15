@@ -72,4 +72,37 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .projectOverView{
+        width: 311px;
+        height: 240px;
+        background-size: 311px;
+    }
+    
+    .projectOverView > div{
+        padding: 153px 0px 0px 24px;
+    }
+    
+    @media(hover:hover){
+        .projectOverView > div:hover{
+            background: rgba(255,255,255,0.4);
+        }
+    }
+    
+    
+    .projectOverViewNumber{
+        display: none;
+    }
+    
+    .projectOverViewInfo{
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color:white;
+    }
+    
+    .projectOverViewTitle{
+        font: 700 32px/40px 'LeagueSpartan-Bold';
+    }
+}
