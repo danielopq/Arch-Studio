@@ -19,4 +19,9 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #aboutUs{
+        width: 375px;
+        margin-bottom: 171px;
+    }
+}
