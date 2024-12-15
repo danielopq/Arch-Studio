@@ -34,5 +34,16 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-
+    #homeSlide{
+        height: 560px;
+    }
+    
+    #homeSlideNavBar{
+        display: none;
+    }
+    
+    #homeSlide > button{
+        margin: 378px 0px 0px 32px;
+        z-index: 100;
+    }
 }
