@@ -51,4 +51,32 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #aboutUsLeaders {
+        width: 311px;
+        height: 1856px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 112px;
+    }
+    
+    #aboutUsLeaders h3 {
+        width: 200px;
+        height: 104px;
+    }
+    
+    #leaderProfiles {
+        width: 311px;
+        height: 1690px;
+        display: grid;
+        grid-template-columns: 311px;
+        grid-template-rows: 371px 371px 371px 371px;
+        column-gap: 0px;
+        row-gap: 70px;
+        grid-template-areas:
+            "Jake"
+            "Thompson"
+            "Jackson"
+            "Maria";
+    }
+}
