@@ -25,7 +25,6 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #aboutUsHeritage{
-        width: inherit;
         height: 627px;
         margin-top: 200px;
         background: none;
@@ -45,4 +44,22 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #aboutUsHeritage{
+        width: 311px;
+        height: 579px;
+        margin-top: 76px;
+        background: none;
+    }
+    
+    #aboutUsHeritage h3{
+        width: 250px;
+        height: 104px;
+        margin: 68px 0px 22px;
+    }
+    
+    #aboutUsHeritage div[class='defaultText']{
+        width: 311px;
+        height: 384px;
+    }
+}
