@@ -18,4 +18,8 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #home{
+        width: 375px;
+    }
+}

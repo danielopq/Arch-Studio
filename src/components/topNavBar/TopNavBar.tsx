@@ -35,7 +35,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ currentSection }) => {
         }
     }, [mbNavBar])
 
-   /**
+    /**
      * Navigates to the specified section of the website and closes the mobile navigation bar.
      * 
      * @param {string} path - The route to navigate to.
