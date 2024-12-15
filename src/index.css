@@ -64,7 +64,6 @@ h1{
 h2{
     font: 700 96px/80px 'LeagueSpartan-Bold';
     letter-spacing: -2px;
-    color:white;
 }
 
 h3{
@@ -104,5 +103,10 @@ h5{
 @media screen and (max-width:767px) {
     body{
         padding: 32px 0px 0px;
+    }
+
+    h2{
+        font: 700 48px/48px 'LeagueSpartan-Bold';
+        letter-spacing: -1.2px;
     }
 }
