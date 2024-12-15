@@ -30,7 +30,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #sectionName {
-        display: none;
+        margin: -68px 0px 0px 50px;
     }
 }
 
