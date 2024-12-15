@@ -37,7 +37,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ section, header, text, de
         <header className="sectionHeader" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='headerContent'>
                 <h1>{section}</h1>
-                <div></div>
+                <div className='decoLine'></div>
                 <h3>{header}</h3>
                 <p className='defaultText'>{text}</p>
             </div>

@@ -5,12 +5,6 @@
     background: url('./img/aboutUsHeritage.jpg') right/540px no-repeat;
 }
 
-#aboutUsHeritage div:not(.defaultText){
-    width: 65px;
-    height: 1px;
-    background-color: var(--lightGrey);
-}
-
 #aboutUsHeritage h3{
     width: 380px;
     height: 133px;

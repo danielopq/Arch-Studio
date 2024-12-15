@@ -57,20 +57,21 @@ const ContactDetails: React.FC = () => {
 
     return (
         <section id="contactDetails">
+            <div className='decoLine'></div>
             <div id="officeDetails">
                 <h3>Contact Details</h3>
-                <div>
-                    <h4>Main office</h4>
-                    <div className="contactDetailsInfo">
+                <div className="contactDetailsInfo">
+                    <div>
+                        <h4>Main office</h4>
                         <p className="defaultText">Mail : archone@mail.com</p>
                         <p className="defaultText">Address : Av. Diagonal 1, Barcelona</p>
                         <p className="defaultText">Phone : 123-456-3451</p>
                     </div>
                     <ViewOnMapBt handleclick={() => spotLocation(41.41101, 2.21850)} />
                 </div>
-                <div>
-                    <h4>Office II</h4>
-                    <div className="contactDetailsInfo">
+                <div className="contactDetailsInfo">
+                    <div>
+                        <h4>Office II</h4>
                         <p className="defaultText">Mail : archtwo@mail.com</p>
                         <p className="defaultText">Address : Plaza de Callao 6, Madrid</p>
                         <p className="defaultText">Phone : 832-123-4321</p>

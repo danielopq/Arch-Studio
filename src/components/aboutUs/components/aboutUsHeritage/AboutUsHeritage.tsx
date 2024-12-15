@@ -9,7 +9,7 @@ import './aboutUsHeritage.css';
 const AboutUsHeritage: React.FC = () => {
     return (
         <section id="aboutUsHeritage">
-            <div></div>
+            <div className='decoLine'></div>
             <h3>Our Heritage</h3>
             <div className='defaultText'>
                 <p>

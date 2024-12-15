@@ -28,11 +28,8 @@
 }
 
 .headerContent div {
-    width: 65px;
-    height: 1px;
     margin-top: 47px;
     align-self: flex-start;
-    background-color: var(--lightGrey);
 }
 
 .headerContent h3 {

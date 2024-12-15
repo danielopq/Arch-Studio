@@ -84,6 +84,12 @@ h5{
     font: 500 18px/24px 'LeagueSpartan-Medium';
 }
 
+.decoLine{
+    width: 65px;
+    height: 1px;
+    background-color: var(--lightGrey);
+}
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {

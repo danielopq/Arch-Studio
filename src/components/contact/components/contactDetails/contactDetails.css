@@ -4,11 +4,13 @@
     margin-top: 274px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 #officeDetails{
     width: inherit;
     height: 207px;
+    margin-top: 73px;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -20,13 +22,22 @@
 }
 
 .contactDetailsInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactDetailsInfo > div{
     width: 350px;
-    height: inherit;
-    margin: 14px 0px 59px;
+    height: auto;
+    margin-bottom: 59px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color:var(--darkGrey);
+}
+
+.contactDetailsInfo h4{
+    margin-bottom: 14px;
 }
 
 #contactMap{
@@ -35,3 +46,47 @@
     margin-top: 199px;
     border: solid 1px var(--veryDarkBlue);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #contactDetails{
+        margin-top: 200px;
+    }
+    
+    #officeDetails{
+        height: 505px;
+        margin-top: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #contactDetails h3{
+        width: 350px;
+        height: 128px;
+    }
+    
+    .contactDetailsInfo{
+        height: 121px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #officeDetails button{
+        margin-top: 83px;
+    }
+
+    .contactDetailsInfo > div{
+        margin-bottom: 43px;
+    }
+    
+    #contactMap{
+        margin-top: 226px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
