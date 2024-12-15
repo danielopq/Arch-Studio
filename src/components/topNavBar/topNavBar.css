@@ -4,9 +4,63 @@
     padding-left: 191px;
     margin-bottom: 56px;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     background: url('./img/logo.svg') left/96px no-repeat;
-    bottom: 0px;
+}
+
+#burgerBt{
+    width: 24px;
+    height: 24px;
+    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.burgerIcon{
+    background-image: url('./img/icon-hamburger.svg');
+}
+
+.closeIcon{
+    background-image: url('./img/icon-close.svg');
+}
+
+#mobileNavBar{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: flex-end;
+    left: 0px;
+    top:96px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3000;
+}
+
+#mobileNavBar > div{
+    width: 343px;
+    height: 291px;
+    padding: 40px 0px 40px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--veryLightGrey);
+}
+
+.mbNavBarBt{
+    height: 40px;
+    padding: 0px;
+    font: 700 32px/40px 'LeagueSpartan-Bold';
+    color: var(--veryDarkBlue);
+    border: none;
+    text-align: left;
+    background-color: transparent;
+}
+
+.mbNavBarBt:disabled{
+    color: rgba(125, 130, 143,0.3);
 }
 
 /*############################## TABLET VERSION ##############################*/
@@ -19,4 +73,22 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #topNavBar{
+        width: 311px;
+        height: 32px;
+        padding-left: 191px;
+        margin-bottom: 32px;
+        align-items: center;
+        justify-content: flex-end;
+        background: url('./img/logo.svg') left/77px no-repeat;
+    }
+
+    #topNavBar div[class="navBar"]{
+        display: none;
+    }
+
+    #burgerBt{
+        display: block;
+    }
+}
