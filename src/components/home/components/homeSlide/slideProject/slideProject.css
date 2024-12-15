@@ -24,7 +24,7 @@
 }
 
 .slideProject h2{
-    width: 540px;
+    width: inherit;
     height: 160px;
 }
 
@@ -39,30 +39,17 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .slideProject{
+        width: 573px;
         background-size: 573px;
     }
     
     .slideProjectBg{
         padding: 186px 58px 0px;
+
     }
     
     .slideProjectBg > div{
-        width: 544px;
-        height: 355px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .slideProject h2{
-        width: 540px;
-        height: 160px;
-    }
-    
-    .slideProject p{
-        width: 445px;
-        height: 160px;
-        margin-top: 10px;
-        color: white;
+        width: 500px;
     }
 }
 

@@ -3,9 +3,10 @@
     height: 40px;
     padding-left: 191px;
     margin-bottom: 56px;
-    display: inline-flex;
+    display: flex;
     align-items: flex-end;
     background: url('./img/logo.svg') left/96px no-repeat;
+    bottom: 0px;
 }
 
 /*############################## TABLET VERSION ##############################*/
