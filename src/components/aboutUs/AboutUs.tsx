@@ -29,9 +29,9 @@ const AboutUs: React.FC<AboutUsProps> = ({ setCurrentSection }) => {
                 section='About'
                 header='Your team of professionals'
                 text={headerText}
-                desktopImg='./public/img/about/AboutHeadPic-desktop.jpg'
-                tabletImg='./public/img/about/AboutHeadPic-tablet.jpg'
-                mobileImg='./public/img/about/AboutHeadPic-mobile.jpg'
+                desktopImg='/img/about/AboutHeadPic-desktop.jpg'
+                tabletImg='/img/about/AboutHeadPic-tablet.jpg'
+                mobileImg='/img/about/AboutHeadPic-mobile.jpg'
             />
             <AboutUsHeritage />
             <AboutUsLeaders />

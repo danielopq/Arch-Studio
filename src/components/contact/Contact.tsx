@@ -28,9 +28,9 @@ const Contact: React.FC<ContactProps> = ({ setCurrentSection }) => {
                 section='Contact'
                 header='Tell us about your project'
                 text={headerText}
-                desktopImg='./public/img/contact/ContactHeadPic-desktop.jpg'
-                tabletImg='./public/img/contact/ContactHeadPic-tablet.jpg'
-                mobileImg='./public/img/contact/ContactHeadPic-mobile.jpg'
+                desktopImg='/img/contact/ContactHeadPic-desktop.jpg'
+                tabletImg='/img/contact/ContactHeadPic-tablet.jpg'
+                mobileImg='/img/contact/ContactHeadPic-mobile.jpg'
             />
             <ContactDetails />
             <ContactForm />
