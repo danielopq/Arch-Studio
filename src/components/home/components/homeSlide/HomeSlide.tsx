@@ -4,6 +4,7 @@ import './homeSlide.css';
 import SlideButton from './slideButton/SlideButton';
 import SlideProject from './slideProject/SlideProject';
 import ArrowButton from '../../../shared/arrowButton/ArrowButton';
+import { useNavigate } from 'react-router-dom';
 
 
 /**
@@ -18,6 +19,7 @@ const HomeSlide: React.FC = () => {
     const [currentProject, setCurrentProject] = useState<number>(0);
     const [projectsOpacity, setProjectsOpacity] = useState<string[]>(['1', '0', '0', '0']);
 
+    const navigate = useNavigate();
 
     /**
      * Updates the opacity of the projects to display the selected project.
@@ -42,7 +44,7 @@ const HomeSlide: React.FC = () => {
 
     return (
         <section id="homeSlide">
-            <ArrowButton text='See Our Portfolio'/>
+            <ArrowButton text='See Our Portfolio' handleClick={()=>navigate('/portfolio')}/>
             <SlideProject
                 zIndex='1'
                 opacity={projectsOpacity[0]}

@@ -1,13 +1,17 @@
 import './homeFeatured.css';
 import ProjectOverView from '../../../shared/projectOverView/ProjectOverView';
 import ArrowButton from '../../../shared/arrowButton/ArrowButton';
+import { useNavigate } from 'react-router-dom';
 
 const HomeFeatured: React.FC = () => {
+
+    const navigate = useNavigate();
+
     return (
         <section id="homeFeatured" >
             <div id="homeFeatured-top" >
                 <h3>Featured</h3>
-                <ArrowButton text='See All' />
+                <ArrowButton text='See All' handleClick={()=>navigate('/portfolio')}/>
             </div>
             <div id="homeFeatured-projects">
                 <ProjectOverView
