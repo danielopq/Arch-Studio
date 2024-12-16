@@ -1,6 +1,7 @@
 import './bottomNavBar.css';
 import NavBar from '../shared/navbar/NavBar';
 import ArrowButton from '../shared/arrowButton/ArrowButton';
+import { useNavigate } from 'react-router-dom';
 
 /**
  * Renders the bottom navigation bar of the website.
@@ -11,13 +12,16 @@ import ArrowButton from '../shared/arrowButton/ArrowButton';
  * @returns {JSX.Element} The BottomNavBar component.
  */
 const BottomNavBar: React.FC = () => {
+
+    const navigate = useNavigate();
+
     return (
         <nav id="bottomNavBar">
             <div id="bottomNavBar-logo"></div>
             <div id="bottomNavBar-buttons">
                 <div>
                     <NavBar />
-                    <ArrowButton text={'See Our Portfolio'} />
+                    <ArrowButton text={'See Our Portfolio'} handleClick={()=>navigate('/portfolio')}/>
                 </div>
             </div>
         </nav>
