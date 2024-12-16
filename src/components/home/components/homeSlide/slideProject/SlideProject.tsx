@@ -32,11 +32,23 @@ const SlideProject: React.FC<SlideProjectProps> = ({zIndex,opacity,title,mainTex
     const [backgroundImage, setBackgroundImage] = useState<string>('');
 
     useEffect(() => {
-        setBackgroundImage(isDesktop ? desktopImg : isTablet ? tabletImg : mobileImg);
-    }, [])
+        updateBackgroundImage();
+        window.addEventListener('resize', updateBackgroundImage);
+        return () => {
+            window.removeEventListener('resize', updateBackgroundImage);
+        };
+    }, [desktopImg, tabletImg, mobileImg]);
 
-    const isDesktop: boolean = window.innerWidth > 1440;
-    const isTablet: boolean = window.innerWidth >= 768 && window.innerWidth < 1440;
+    /**
+     * Updates the background image based on the current window size.
+     * Determines the screen size category (desktop, tablet, or mobile)
+     * and sets the appropriate image URL.
+     */
+    const updateBackgroundImage = () => {
+        const isDesktop = window.innerWidth >= 1024;
+        const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
+        setBackgroundImage(isDesktop ? desktopImg : isTablet ? tabletImg : mobileImg);
+    };
 
     return (
         <div className='slideProject' style={{ backgroundImage: `url(${backgroundImage})`,opacity:opacity,zIndex:zIndex }}>
