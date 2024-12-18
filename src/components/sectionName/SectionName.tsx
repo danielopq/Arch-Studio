@@ -12,10 +12,10 @@ interface SectionNameProps{
  */
 const SectionName:React.FC<SectionNameProps> = ({title}) => {
     return (
-        <div id='sectionName'>
+        <section id='sectionName'>
             <div></div>
             <p>{title.toUpperCase()}</p>
-        </div>
+        </section>
     )
 }
 export default SectionName; 
