@@ -20,10 +20,21 @@ The website is fully responsive, offering seamless performance and a visually co
 
 ### Screenshots
 
-- [Day time without info - desktop version](https://github.com/danielopq/clock-app/blob/main/screenshots/dayNoInfo.jpg)
-- [Day time with info - desktop version](https://github.com/danielopq/clock-app/blob/main/screenshots/dayInfo.jpg)
-- [Night time without info - desktop version](https://github.com/danielopq/clock-app/blob/main/screenshots/nightNoInfo.jpg)
-- [Night time with info - desktop version](https://github.com/danielopq/clock-app/blob/main/screenshots/nightInfo.jpg)
+- [home - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-desktop.jpg)
+- [home - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-mobile.jpg)
+- [home - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-mobile.jpg)
+
+- [portfolio - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-desktop.jpg)
+- [portfolio - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-mobile.jpg)
+- [portfolio - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-mobile.jpg)
+
+- [about us - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/aboutUs-desktop.jpg)
+- [about us - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/aboutUs-mobile.jpg)
+- [about us - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/aboutUs-mobile.jpg)
+
+- [contact - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/contact-desktop.jpg)
+- [contact - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/contact-mobile.jpg)
+- [contact - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/contact-mobile.jpg)
 
 
 ### Links
