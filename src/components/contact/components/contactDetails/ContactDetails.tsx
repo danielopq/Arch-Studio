@@ -3,17 +3,22 @@ import 'leaflet/dist/leaflet.css';
 import './contactDetails.css';
 import L from 'leaflet';
 import ViewOnMapBt from './viewOnMapBt/ViewOnMapBt';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-/**
- * The ContactDetails component displays the company's contact information, 
- * including email, address, and phone number.
- * It also includes buttons to view the locations of the offices on a map.
- * 
- * @returns {JSX.Element} The ContactDetails component displaying the office details and view on map buttons.
- */
 const ContactDetails: React.FC = () => {
-    const mapRef = useRef<L.Map | null>(null);  // Reference to the map instance
-    const markers = useRef<L.Marker[]>([]);    // Reference to store the markers on the map
+    const mapRef = useRef<L.Map | null>(null); // Reference to the map instance
+    const markers = useRef<L.Marker[]>([]);   // Reference to store the markers on the map
+
+    // Define the custom icon for the markers
+    const customIcon = L.icon({
+        iconUrl: markerIcon,
+        shadowUrl: markerShadow,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+    });
 
     useEffect(() => {
         // Initialize the map centered on specific coordinates
@@ -24,34 +29,28 @@ const ContactDetails: React.FC = () => {
             attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
-        mapRef.current = map;  // Save the reference to the map
+        mapRef.current = map; // Save the reference to the map
 
         // Create a marker at the initial location and add it to the map
-        const marker = L.marker([41.41101, 2.21850]).addTo(mapRef.current!);
-        map.setView(marker.getLatLng(), 16);  // Center the map on the marker
-        markers.current.push(marker);  // Add the marker to the markers array
+        const marker = L.marker([41.41101, 2.21850], { icon: customIcon }).addTo(mapRef.current!);
+        map.setView(marker.getLatLng(), 16); // Center the map on the marker
+        markers.current.push(marker); // Add the marker to the markers array
 
         return () => {
-            map.remove();  // Clean up the map when the component unmounts
+            map.remove(); // Clean up the map when the component unmounts
         };
-    }, []);
+    }, [customIcon]);
 
-    /**
-     * Spots a location on the map by placing a marker at the specified coordinates.
-     * 
-     * @param {number} lat - Latitude of the location
-     * @param {number} lng - Longitude of the location
-     */
+    // Spots a location on the map by placing a marker at the specified coordinates
     const spotLocation = (lat: number, lng: number) => {
         const map = mapRef.current;
-        // Remove all existing markers
-        markers.current.forEach(marker => marker.remove());
+        markers.current.forEach(marker => marker.remove()); // Remove all existing markers
         markers.current = [];
         if (map) {
             // Create a new marker and add it to the map
-            const marker = L.marker([lat, lng]).addTo(mapRef.current!);
-            map.setView(marker.getLatLng(), 16);  // Center the map on the new marker
-            markers.current.push(marker);  // Add the marker to the markers array
+            const marker = L.marker([lat, lng], { icon: customIcon }).addTo(mapRef.current!);
+            map.setView(marker.getLatLng(), 16); // Center the map on the new marker
+            markers.current.push(marker); // Add the marker to the markers array
         }
     };
 
