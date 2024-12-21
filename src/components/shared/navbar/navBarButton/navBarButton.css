@@ -1,14 +1,23 @@
 .navBarButton{
-    width: auto;
+    width: 100%;
+    max-width: 72px;
     height: 32px;
-    font: 700 18px/32px 'LeagueSpartan-Bold';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font: 700 18px/25px 'LeagueSpartan-Bold';
     border: none;
     background-color: transparent;
     transition: color 0.3s ease;
-    
 }
 
-.navBarButton:not(:disabled){
+.navBarButton p{
+    user-select: none;
+}
+
+
+.nb-notDisabled{
     color:var(--mediumGrey);
     cursor: pointer;
 }
@@ -19,8 +28,9 @@
     }
 }
 
-.navBarButton:disabled{
+.nb-disabled{
     color: var(--veryDarkBlue);
+    cursor:default;
 }
 
 .btUnderline {
@@ -29,11 +39,11 @@
     transition: background-color 0.5s ease;
 }
 
-.navBarButton:disabled .btUnderline{
+.nb-disabled .btUnderline{
     background-color: var(--veryDarkBlue);
 }
 
-.navBarButton:not(:disabled) .btUnderline{
+.nb-notDisabled .btUnderline{
     background-color: transparent;
 }
 

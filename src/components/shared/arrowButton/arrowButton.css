@@ -4,10 +4,11 @@
     padding: 25px 80px 22px 36px;
     font: 700 18px/25px 'LeagueSpartan-Bold';
     color: white;
-    background: var(--veryDarkBlue) url('./img/icon-arrow.svg') calc(100% - 32px) 50%/23px no-repeat;
+    background: var(--veryDarkBlue) url('./img/icon-arrow.svg') calc(100% - 31px) 51%/26px no-repeat;
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
+    user-select: none;
 }
 
 @media(hover:hover){

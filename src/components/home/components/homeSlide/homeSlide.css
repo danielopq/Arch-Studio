@@ -13,7 +13,7 @@
     display: inline-flex;
 }
 
-#homeSlide > button{
+#homeSlide > div[class='arrowButton']{
     margin: 469px 0px 0px 190px;
     z-index: 100;
 }
@@ -26,7 +26,7 @@
         display: none;
     }
     
-    #homeSlide > button{
+    #homeSlide > div[class='arrowButton']{
         margin: 469px 0px 0px 58px;
     }
 }
@@ -42,7 +42,7 @@
         display: none;
     }
     
-    #homeSlide > button{
+    #homeSlide > div[class='arrowButton']{
         margin: 378px 0px 0px 32px;
         z-index: 100;
     }

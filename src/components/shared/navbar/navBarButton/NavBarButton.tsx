@@ -28,10 +28,10 @@ const NavBarButton: React.FC<NavBarButtonProps> = ({ text, path,currentSection='
 
     const navigate = useNavigate();
     return (
-        <button className='navBarButton' disabled={disabled} aria-label={text} onClick={() => navigate(path)}>
+        <div className={'navBarButton ' + (disabled ? 'nb-disabled' : 'nb-notDisabled')} aria-label={text} onClick={() => navigate(path)}>
             <p>{text}</p>
             <div className='btUnderline'></div>
-        </button>
+        </div>
 
     )
 }

@@ -15,7 +15,7 @@ interface ArrowButtonProps{
  */
 const ArrowButton: React.FC<ArrowButtonProps> = ({text='',handleClick}) => {
     return (
-        <button className='arrowButton' onClick={handleClick}>{text}</button>
+        <div className='arrowButton' onClick={handleClick}>{text}</div>
     )
 }
 export default ArrowButton;
