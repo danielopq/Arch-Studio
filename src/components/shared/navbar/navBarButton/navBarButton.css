@@ -1,14 +1,11 @@
 .navBarButton{
     width: auto;
     height: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font: 700 18px/25px 'LeagueSpartan-Bold';
+    font: 700 18px/32px 'LeagueSpartan-Bold';
     border: none;
     background-color: transparent;
     transition: color 0.3s ease;
+    
 }
 
 .navBarButton:not(:disabled){

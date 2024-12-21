@@ -1,9 +1,11 @@
 .navBar{
-    width: 313px;
     height: 32px;
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.navBar button:nth-child(2){
+    margin: 0px 51px 0px 61px;
 }
 
 /*############################## MOBILE VERSION ##############################*/

@@ -5,7 +5,7 @@
     margin-bottom: 56px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     background: url('./img/logo.svg') left/96px no-repeat;
 }
 
