@@ -32,7 +32,7 @@ const HomeFeatured: React.FC = () => {
                 />
                 <ProjectOverView
                     number={'3'}
-                    title='Le Protype'
+                    title='Le Prototype'
                     info='View All Projects'
                     desktopImg='/img/projects/prototype-desktop.jpg'
                     tabletImg='/img/projects/prototype-tablet.jpg'

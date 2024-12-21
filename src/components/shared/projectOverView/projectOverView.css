@@ -9,7 +9,7 @@
 .projectOverView > div{
     width: inherit;
     height: inherit;
-    padding: 45px 0px 40px 40px;
+    padding: 45px 0px 39px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +25,7 @@
 
 
 .projectOverViewNumber{
-    margin-right: -10px;
+    margin-right: -12px;
     padding: 0px;
     font: 700 250px/200px 'LeagueSpartan-Bold';
     letter-spacing: -5px;

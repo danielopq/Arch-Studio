@@ -5,12 +5,13 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 200px;
+    
 }
 
 #homeFeatured>div {
     width: inherit;
     display: inline-flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
