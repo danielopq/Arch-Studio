@@ -8,6 +8,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     background: url('./img/welcomePic.jpg') right/350px no-repeat;
+    border:solid 1px red;
 }
 
 #homeWelcome div[class='decoLine'] {
@@ -16,11 +17,12 @@
 
 #homeWelcome h1 {
     height: 200px;
-    margin: -123px 0px 0px -189px;
+    margin: -122px 0px 0px -191px;
 }
 
 #homeWelcome h3 {
     width: 446px;
+    margin-top: -3px;
     color: var(--veryDarkBlue);
 }
 
