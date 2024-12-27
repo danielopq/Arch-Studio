@@ -43,7 +43,7 @@
         margin-top: 73px;
     }
 
-    #homeFeatured-top > button{
+    #homeFeatured-top > div[class='arrowButton']{
         display: none;
     }
 
@@ -58,7 +58,7 @@
     #homeFeatured-bottom{
         display: block!important;
     }
-    #homeFeatured-bottom button{
+    #homeFeatured-top > div[class='arrowButton']{
         width: inherit;
     }
 }

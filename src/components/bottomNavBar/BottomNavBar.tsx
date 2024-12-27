@@ -17,7 +17,7 @@ const BottomNavBar: React.FC = () => {
 
     return (
         <nav id="bottomNavBar">
-            <div id="bottomNavBar-logo"></div>
+            <div id="bottomNavBar-logo" onClick={()=>navigate('/')}></div>
             <div id="bottomNavBar-buttons">
                 <div>
                     <NavBar />

@@ -7,7 +7,15 @@
 #bottomNavBar-logo{
     width: 200px;
     height: inherit;
-    background: var(--veryDarkBlue) url('./img/logo-white.svg') center/96px no-repeat ;
+    background: var(--veryDarkBlue) url('./img/logo-white.svg') center/96px no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media(hover:hover){
+    #bottomNavBar-logo:hover{
+        background-color: var(--mediumGrey);
+    } 
 }
 
 #bottomNavBar-buttons{
@@ -67,7 +75,7 @@
         width: 120px;
         height: 120px;
         margin-top: -60px;
-        background: var(--veryDarkBlue) url('./img/logo-white.svg') center/58px no-repeat ;
+        background: var(--veryDarkBlue) url('./img/logo-white.svg') center/58px no-repeat;
     }
     
     #bottomNavBar-buttons{
