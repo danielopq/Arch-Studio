@@ -1,12 +1,25 @@
 #topNavBar{
     width: 1110px;
     height: 40px;
-    padding-left: 187px;
     margin-bottom: 56px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: url('./img/logo.svg') left/96px no-repeat;
+}
+
+#topNavBar-logo{
+    width: 96px;
+    height: 40px;
+    margin-right: 91px;
+    background: url('./img/logo.svg') center/96px no-repeat;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    #topNavBar-logo:hover{
+        opacity: 0.5;
+    }
 }
 
 #burgerBt{
@@ -69,6 +82,10 @@
     #topNavBar{
         width: 573px;
     }
+
+    #topNavBar-logo{
+        margin-right: 78px;
+    }
 }
 
 /*############################## MOBILE VERSION ##############################*/
@@ -77,11 +94,16 @@
     #topNavBar{
         width: 311px;
         height: 32px;
-        padding-left: 191px;
         margin-bottom: 32px;
         align-items: center;
-        justify-content: flex-end;
-        background: url('./img/logo.svg') left/77px no-repeat;
+        justify-content: space-between;
+    }
+
+    #topNavBar-logo{
+        width: 77px;
+        height: 32px;
+        margin-right: 0px;
+        background: url('./img/logo.svg') center/77px no-repeat;
     }
 
     #topNavBar div[class="navBar"]{

@@ -47,6 +47,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ currentSection }) => {
 
     return (
         <nav id="topNavBar">
+            <div id="topNavBar-logo" onClick={() => gotoSection('/')}></div>
             <NavBar currentSection={currentSection} />
             <button id="burgerBt" className={mbNavBar ? 'closeIcon' : 'burgerIcon'} onClick={()=>setMbNavBar(!mbNavBar)}></button>
             <div ref={refMobileNavBar} id="mobileNavBar">
